@@ -1,0 +1,31 @@
+// sumaimpares.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{ int n,s,c,i;
+cout<<"ingrese el valor de n:";
+cin>>n;
+
+s=0;
+c=1;
+i=1;
+while(i<=n)
+{
+	s=s+c;
+	c=c+2;
+	i=i+1;
+}
+cout<<" el valor de s es:"<<s;
+
+
+getch();
+
+	
+}
