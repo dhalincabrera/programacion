@@ -1,0 +1,41 @@
+// mcd.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{int a,b,c,mcd,cont,men;
+  cin>>a;
+  cin>>b;
+  cin>>c;
+  if(a<=c && a<=b)
+     men=a;
+  else
+	  if(b<=c && b<=a)
+		  men=b;
+	  else
+		  men=c;
+  mcd=1;
+  cont=2;
+  while(cont<=men)
+  {
+     if((a%cont==0)&&(b%cont==0)&&(c%cont==0));
+	  {
+
+		  a=a/cont;
+		  b=b/cont;
+		  c=c/cont;
+		  men=men/cont;
+		  mcd=mcd*cont;
+		  cont=cont-1;
+		  
+  }
+    cont=cont+1;
+  }
+   cout<<"el maximo comun divisor es:"<<mcd;
+   getch();
+}
