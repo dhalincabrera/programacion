@@ -1,0 +1,60 @@
+// total de compras.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+
+void main()
+{ float X,H,HQ,PF,C,S,TP;
+  if(0<=H<=100)
+  {
+	  cout<<"ingrese la cantida de hamburguesa:";
+	  cin>>H;
+	  cout<<"ingrese el precio:";
+	  cin>>C;
+	  TP=C*H;
+	  cout<<"EL PRECIO PARCIAL ES:";
+	  cout<<TP;
+  }
+  if(0<=HQ<=100)
+  {
+	  cout<<"\ningrese la cantida de hamburguesa con queso:";
+	  cin>>HQ;
+	  cout<<"ingrese el precio:";
+	  cin>>C;
+	  TP=C*HQ;
+	  cout<<"EL PRECIO PARCIAL ES:";
+	  cout<<TP;
+  }
+    if(0<=PF<=100)
+  {
+	  cout<<"\ningrese la cantida de papa fritas:";
+	  cin>>PF;
+	  cout<<"ingrese el precio:";
+	  cin>>C;
+	  TP=C*PF;
+	  cout<<"EL PRECIO PARCIAL ES:";
+	  cout<<TP;
+  }
+   if(0<=S<=100)
+  {
+	  cout<<"\ningrese la cantida de soda:";
+	  cin>>S;
+	  cout<<"ingrese el precio:";
+	  cin>>C;
+	  TP=C*S;
+	  cout<<"EL PRECIO PARCIAL ES:";
+	  cout<<TP;
+  }
+
+   X=H+HQ+PF+S;
+   cout<<"\nel total de compras es:";
+   cout<<X;
+     
+  getch();
+  }
+ 
