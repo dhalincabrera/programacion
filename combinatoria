@@ -1,0 +1,37 @@
+// combinatoria.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+ using namespace std;
+int factorial (int n);
+int combi (int n, int r);
+
+void main()
+{ int n, r,c;
+  cout<<"ingrese el valor de n:";
+  cin>>n; 
+  cout<<"ingrese el valor de r:";
+  cin>>r;
+  c=combi(n,r);
+  cout<<"el resultado es:";
+  cout<<c;
+  getch();
+	
+}
+
+int factorial (int n)  
+{int i,fact;
+  fact=1;
+  for (int i=1;i<=n;i++)
+      fact=fact*i;
+  return fact;
+}
+int combi (int n, int r)
+{ int c;
+  c=factorial(n)/(factorial(r)*factorial(n-r));
+  return c;
+}
