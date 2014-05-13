@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int factorial (int numero); // Prototipos de la funcion
+int factorial (int numero);
 float potencia ( float base, int exponente);
 
 void main()
@@ -17,12 +17,12 @@ void main()
     cin >> n;
     suma=0;
     for (i=1;i<=n;i++)
-        suma=suma+potencia (x,i)/factorial(i); // llamadas a la función
+        suma=suma+potencia (x,i)/factorial(i);
     cout<< "El valor de la suma es: "<<suma;
     getch();
 }
 
-int factorial (int numero)   //Declaración de la función
+int factorial (int numero)  
 {
   int fact=1;
   for (int i=1;i<=numero;i++)
