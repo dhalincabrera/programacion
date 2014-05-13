@@ -1,0 +1,36 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int conversion (int n,int base);
+
+void main()
+{
+	int conv,n,b;
+	cout<< "\n\nIngrese el valor del numero binario: ";
+	cin>>n;
+	conv = conversion(n,2);
+	cout<< "\n\n El resultado en decimal es: "<<conv;
+	getch();
+}
+
+	
+	int conversion (int n,int base)
+		{
+			int d,conv;
+			float i;
+				i=0;
+				conv=0;
+	
+				while (n>0)
+					{
+						d=n%10;
+						n=n/10;
+						conv=conv+d*pow(base,i);
+						i=i+1;
+					}
+				return (conv);
+	}
